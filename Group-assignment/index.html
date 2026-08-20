@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar / Topbar depending on viewport -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="logo-icon"><i class="fa-solid fa-fire"></i></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">Categories</a>
+                <a href="#" class="nav-item"> Dishes</a>
+                <a href="#" class="nav-item">Orders</a>
+            </nav>
+
+        </aside>
+
+        <!-- Main Dashboard Area -->
+        <main class="main-content">
+            <!-- Search -->
+            <div class="search-container">
+                <input type="text" placeholder="Search Food, Cuisine or a Dish">
+                <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <!-- Categories -->
+            <section>
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2>Categories</h2>
+                        <p><span>10+ New</span> Categories added this week</p>
+                    </div>
+                    <a href="#" class="view-more">View More <div class="view-more-btn"><i
+                                class="fa-solid fa-chevron-right"></i></div></a>
+                </div>
+                <div class="categories-list">
+                    <div class="category-item" data-category="all">🍽️</div>
+
+                    <div class="category-item" data-category="fasting">🌱</div>
+
+                    <div class="category-item" data-category="affordable">💰</div>
+
+                    <div class="category-item" data-category="spicy">🌶️</div>
+
+                    <div class="category-item" data-category="non-fasting">🍗</div>
+
+                    <div class="category-item" data-category="classy">✨</div>
+                </div>
+            </section>
+
+            <!-- Popular Dishes -->
+            <section>
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2>Popular Dishes</h2>
+                        <p><span>20+ New</span> dishes added this week</p>
+                    </div>
+                    <a href="#" class="view-more">View More <div class="view-more-btn"><i
+                                class="fa-solid fa-chevron-right"></i></div></a>
+                </div>
+                <div class="dishes-grid">
+                    <!-- <div class="dish-card">
+                        <div class="dish-img"><img src="Assets/doro.png" alt=""></div>
+                        <div class="dish-name">Doro Wot</div>
+                        <div class="dish-subtext">Starting From</div>
+                        <div class="dish-price">ETB 600.00</div>
+                        <div class="dish-meta">
+                            <div class="dish-rating"><i class="fa-solid fa-star"></i> 4.5</div>
+                            <div class="dish-add-to-cart"><button class="add-to-cart">Add to Cart</button></div>
+                         
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="dish-card">
+                     
+                        <div class="dish-img"><img src="Assets/gomen.png" alt=""></div>
+                        <div class="dish-name">Gomen</div>
+                        <div class="dish-subtext">Starting From</div>
+                        <div class="dish-price">ETB 300.00</div>
+                        <div class="dish-meta">
+                            <div class="dish-rating"><i class="fa-solid fa-star"></i> 4.8</div>
+                            <div class="dish-add-to-cart"><button>Add to Cart</button></div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </section>
+
+            <!-- Order Reports -->
+            <section>
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2>Order Reports</h2>
+                        <p><span>Wow!! 100+ New</span> order got this week</p>
+                    </div>
+                    <a href="#" class="view-more">View More <div class="view-more-btn"><i
+                                class="fa-solid fa-chevron-right"></i></div></a>
+                </div>
+                <div class="table-wrapper hidden">
+                    <table class="reports-table">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Order number</th>
+                                <th>Address</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- Cart Side / Bottom Panel -->
+        <aside class="cart-panel">
+            <div>
+                <!-- Delivery Card -->
+                <div class="delivery-card">
+                    <div class="delivery-title">DELIVERY ADDRESS</div>
+                    <div class="delivery-address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Po. 1478, Street No. 52, West New York</span>
+                    </div>
+                    <div class="delivery-time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>20 min</span>
+                    </div>
+                </div>
+
+                <!-- Cart Header -->
+                <div class="cart-header">
+                    <div class="cart-title">
+                        <i class="fa-solid fa-cart-shopping"></i> Cart
+                    </div>
+                    <!-- <div class="order-id">Order ID: #1099</div> -->
+                </div>
+
+                <!-- Delivery Mode Selector -->
+                <div class="delivery-toggle">
+                    <div class="toggle-btn active">Delivery</div>
+                    <div class="toggle-btn">Takeaway</div>
+                </div>
+
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- <div class="cart-item">
+                        <div class="cart-item-info">
+                            <div class="cart-item-icon">🍕</div>
+                            <div class="cart-item-details">
+                                <h4>Pepperoni Pizza</h4>
+                                <p>Thin Crust</p>
+                                <div class="cart-item-qty">
+                                    <div class="qty-btn"><i class="fa-solid fa-minus"></i></div>
+                                    <span>2</span>
+                                    <div class="qty-btn"><i class="fa-solid fa-plus"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-btn"><i class="fa-solid fa-pen"></i></div>
+                    </div> -->
+
+                    <!-- <div class="cart-item">
+                        <div class="cart-item-info">
+                            <div class="cart-item-icon">🍔</div>
+                            <div class="cart-item-details">
+                                <h4>Cheese Burger</h4>
+                                <p>Whole wheat bun</p>
+                                <div class="cart-item-qty">
+                                    <div class="qty-btn"><i class="fa-solid fa-minus"></i></div>
+                                    <span>2</span>
+                                    <div class="qty-btn"><i class="fa-solid fa-plus"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-btn"><i class="fa-solid fa-pen"></i></div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div>
+
+
+
+                <!-- Summary -->
+                <div class="summary-row">
+                    <span>Sub Total</span>
+                    <span class="sub-total">$155.20</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Charge</span>
+                    <span>ETB 10</span>
+                </div>
+                <div class="summary-row total">
+                    <span>TOTAL</span>
+                    <span class="grand-total">$165.20</span>
+                </div>
+
+                <button class="checkout-btn">Confirm Order</button>
+            </div>
+        </aside>
+    </div>
+
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="checkout-modal">
+            <div class="modal-header">
+                <h2>Checkout</h2>
+                <button class="close-modal" id="close-modal">&times;</button>
+            </div>
+
+            <form id="checkout-form">
+
+                <div class="form-group">
+                    <label for="customer-name">Name</label>
+                    <input type="text" id="customer-name" placeholder="Enter your name" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-phone">Phone</label>
+                    <input type="tel" id="customer-phone" placeholder="09XXXXXXXX" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-address">Address</label>
+                    <input type="text" id="customer-address" placeholder="Enter your delivery address" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit" class="checkout-btn">
+                    Place Order
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

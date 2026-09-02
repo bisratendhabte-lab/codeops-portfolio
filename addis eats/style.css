@@ -1,0 +1,157 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: #f5f2eb;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+#root {
+  max-width: 720px;
+  width: 100%;
+}
+
+/* ----- card wrapper ----- */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  margin-bottom: 1.5rem;
+}
+
+/* ----- dish list ----- */
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.dish-item {
+  background: #fcfaf7;
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ede8e0;
+}
+.dish-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.dish-name {
+  font-weight: 600;
+}
+.badge {
+  background: #d32f2f;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+.price {
+  font-weight: 500;
+  color: #2e3b3b;
+  background: #ede8e0;
+  padding: 0.15rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* ----- empty state ----- */
+.empty-state {
+  text-align: center;
+  color: #7a6e5e;
+  padding: 2rem 0;
+  background: #f7f4ef;
+  border-radius: 24px;
+  font-style: italic;
+}
+
+/* ----- filter buttons ----- */
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.filter-btn {
+  background: #ede8e0;
+  border: none;
+  border-radius: 40px;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  color: #2e3b3b;
+  cursor: pointer;
+  transition: 0.1s;
+  font-size: 0.9rem;
+}
+.filter-btn.active {
+  background: #2e3b3b;
+  color: white;
+}
+.filter-btn:hover {
+  background: #d5cdc1;
+}
+
+/* ----- order total ----- */
+.order-total {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #eae5dc;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* ----- TeleBirr form ----- */
+.telebirr-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.telebirr-form input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #d5cdc1;
+  border-radius: 40px;
+  font-size: 1rem;
+  background: white;
+}
+.telebirr-form input:focus {
+  outline: 1px solid #2e3b3b;
+  border-color: #2e3b3b;
+}
+.telebirr-form button {
+  background: #2e3b3b;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.7rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.telebirr-form button:hover {
+  background: #1d2626;
+}
+.delivery-feedback {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #1d6b3c;
+}
+.delivery-feedback.error {
+  color: #b33a3a;
+}

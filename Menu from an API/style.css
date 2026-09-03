@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background: #f5f2eb;
+    font-family: system-ui, sans-serif;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+#root {
+    max-width: 700px;
+    width: 100%;
+}
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.sub {
+    color: #5a4f40;
+    margin-bottom: 1.5rem;
+}
+.filter-bar {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.filter-btn {
+    background: #ede8e0;
+    border: none;
+    border-radius: 40px;
+    padding: 0.4rem 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.filter-btn.active {
+    background: #2e3b3b;
+    color: white;
+}
+.dish-item {
+    background: #fcfaf7;
+    border-radius: 14px;
+    padding: 0.7rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ede8e0;
+    margin-bottom: 0.6rem;
+}
+.dish-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.dish-name {
+    font-weight: 600;
+}
+.badge {
+    background: #d32f2f;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.1rem 0.6rem;
+    border-radius: 20px;
+}
+.price {
+    font-weight: 500;
+    background: #ede8e0;
+    padding: 0.1rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+.empty-state {
+    text-align: center;
+    color: #7a6e5e;
+    padding: 2rem 0;
+    background: #f7f4ef;
+    border-radius: 20px;
+    font-style: italic;
+}
+.loading {
+    text-align: center;
+    color: #2e3b3b;
+    padding: 2rem 0;
+}
+.error {
+    text-align: center;
+    color: #b33a3a;
+    padding: 2rem 0;
+    background: #fdeaea;
+    border-radius: 20px;
+}
+.search-input {
+    padding: 0.6rem 1rem;
+    border: 1px solid #d5cdc1;
+    border-radius: 40px;
+    font-size: 1rem;
+    width: 100%;
+    background: white;
+}
+.search-input:focus {
+    outline: 1px solid #2e3b3b;
+}
+.order-total {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    background: #eae5dc;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.footer {
+    font-size: 0.8rem;
+    color: #8a7e6e;
+    text-align: center;
+    margin-top: 1.5rem;
+}
